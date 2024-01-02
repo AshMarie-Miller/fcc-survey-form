@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ashley's Web Design | Survey Form</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title"><span>Ashley's</span> Web Design</h1>
+            <p id="description">
+                Thank-you for visiting my <a href="http://www.ashleysweb.design">portfolio</a>! I would appreciate it if you would take a moment to let me know what you think by submitting this form. Thank-you again!
+            </p>
+        </header>
+        <main>
+            <div class="stepNumbers">
+                <span class="stepNumber active">1</span>
+                <span class="stepNumber">2</span>
+                <span class="stepNumber">3</span>
+            </div>
+            <form id="survey-form">
+                <span class="light">* Required</span>
+                <div class="steps">
+                    <div class="step">
+                        <div class="input-container">
+                            <input type="text" id="name" required>
+                            <label for="name" id="name-label" class="bold">Name *</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="number" id="number" min="0" max="100">
+                            <label for="number" id="number-label" class="bold">Age</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" id="email" required>
+                            <label for="email" id="email-label" class="bold">Email *</label>
+                        </div>
+                        <label for="dropdown" class="bold">Which option best describes you?</label>
+                        <select id="dropdown">
+                            <option>Select an Option</option>
+                            <option>Web Surfer</option>
+                            <option>Web Designer</option>
+                            <option>Web Developer</option>
+                        </select>
+                    </div>
+                    <div class="step hidden">
+                        <span class="bold">What do you like most about my portfolio?</span>
+                        <div class="options">
+                            <div>
+                                <label for="layout">Layout</label>
+                                <input type="radio" id="layout" name="likeMost" value="layout">
+                            </div>
+                            <div>
+                                <label for="typography">Typography</label>
+                                <input type="radio" id="typography" name="likeMost" value="typography">
+                            </div>
+                            <div>
+                                <label for="colors">Colors</label>
+                                <input type="radio" id="colors" name="likeMost" value="colors">
+                            </div>
+                        </div>
+                        <span class="bold">What do you like least about my portfolio?</span>
+                        <div class="options">
+                            <div>
+                                <label for="layout">Layout</label>
+                                <input type="radio" id="layout" name="likeLeast" value="layout">
+                            </div>
+                            <div>
+                                <label for="typography">Typography</label>
+                                <input type="radio" id="typography" name="likeLeast" value="typography">
+                            </div>
+                            <div>
+                                <label for="colors">Colors</label>
+                                <input type="radio" id="colors" name="likeLeast" value="colors">
+                            </div>
+                        </div>
+                        <span class="bold">What would you like to see more of?</span>
+                        <div class="options">
+                            <div>
+                                <label for="projects">Projects</label>
+                                <input type="checkbox" id="projects" name="projects" value="projects">
+                            </div>
+                            <div>
+                                <label for="posts">Posts</label>
+                                <input type="checkbox" id="posts" name="posts" value="posts">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step hidden">
+                        <label for="thoughts" class="bold">Let me know your thoughts and any suggestions you have to make my portfolio better. Thank-you again!</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a class="button hidden bold" id="previous">Previous</a>
+                    <a class="button bold" id="continue">Continue</a>
+                    <button class="button submit hidden bold" id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>
